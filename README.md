@@ -1,4 +1,4 @@
-# Project Title
+# Contact CRUD Application
 
 Contact CRUD Application
 
@@ -25,7 +25,7 @@ npm install
 2. Once the dependencies installed, run server file by running below command in the same terminal.
 
 ```
-node server.json
+node server.js
 ```
 
 3. Go to app folder "contacts-app". Open terminal in same folder and hit the below command to install dependencies.

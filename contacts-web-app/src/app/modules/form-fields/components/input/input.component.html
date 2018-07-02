@@ -1,0 +1,14 @@
+<mat-form-field [appearance]="appearance">
+  <mat-label>{{label}}</mat-label>
+  <ng-container [ngSwitch]="mode">
+    <ng-container *ngSwitchCase="'input'">
+      <input matInput [type]="type" [placeholder]="placeholder" [value]="value" [formControl]="control" (change)="onChange($event)"
+        autocomplete="nope">
+    </ng-container>
+    <ng-container *ngSwitchCase="'textarea'">
+      <textarea matInput [placeholder]="placeholder" [formControl]="control" (change)="onChange($event)" autocomplete="nope">{{value}}</textarea>
+    </ng-container>
+  </ng-container>
+  <mat-icon matSuffix *ngIf="icon"><i [class]="icon"></i></mat-icon>
+  <mat-error>{{getErrorMessages()}}</mat-error>
+</mat-form-field>

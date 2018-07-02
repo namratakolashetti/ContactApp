@@ -1,0 +1,12 @@
+<app-header pageTitle="Contacts">
+  <button type="button" actions mat-raised-button color="primary" routerLink="add"><mat-icon><i class="ti-plus"></i></mat-icon>Add Contact</button>
+</app-header>
+<div class="container">
+  <div class="contacts-list cards-list">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 cards-list__col" *ngFor="let contact of contacts">
+        <app-contact-card [contact]="contact" (onDelete)="delete($event)"></app-contact-card>
+      </div>
+    </div>
+  </div>
+</div>

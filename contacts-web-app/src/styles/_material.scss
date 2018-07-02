@@ -1,0 +1,148 @@
+@import "_variables_mixins";
+
+body {
+  .mat-card {
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+    background-color: $white-color;
+  }
+
+  .mat-form-field {
+    width: 100%;
+    font-family: $third-font-family;
+    font-size: 14px;
+
+    &.mat-form-field-appearance-outline {
+      .mat-form-field-prefix,
+      .mat-form-field-suffix {
+        top: 0px;
+      }
+    }
+
+    .mat-form-field-label,
+    .mat-input-element {
+      font-family: $third-font-family;
+    }
+  }
+
+  .mat-calendar,
+  .mat-option,
+  .mat-select,
+  .mat-card {
+    font-family: $third-font-family;
+  }
+
+  .mat-icon-button,
+  .mat-mini-fab,
+  .mat-fab {
+    outline: none;
+  }
+
+  .mat-button,
+  .mat-flat-button,
+  .mat-raised-button,
+  .mat-stroked-button {
+    font-family: $fourth-font-family;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+
+    &.large-button {
+      line-height: 45px;
+    }
+
+    .mat-icon {
+      vertical-align: initial;
+
+      &.left-position {
+        position: absolute;
+        left: 10px;
+        top: 2px;
+      }
+    }
+  }
+
+  .mat-button,
+  .mat-flat-button,
+  .mat-raised-button {
+    &.mat-orange {
+      background-color: $orange-color;
+      color: $white-color;
+    }
+    &.mat-primary {
+      background-color: $primary-color;
+    }
+    &.mat-warn {
+      background-color: $danger-color;
+    }
+  }
+
+  .mat-stroked-button {
+    &.mat-orange {
+      color: $orange-color;
+    }
+    &.mat-primary {
+      color: $primary-color;
+    }
+    &.mat-warn {
+      color: $danger-color;
+    }
+  }
+
+  .mat-select-arrow {
+    border: 0 none;
+    font-family: "themify";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: auto;
+    height: auto;
+    color: #333;
+    margin-top: 1px;
+
+    &:before {
+      content: "\e64b";
+    }
+  }
+
+  .mat-pseudo-checkbox-checked::after {
+    top: 6px;
+    left: 4px;
+  }
+
+  .mat-primary {
+    .mat-option.mat-selected:not(.mat-option-disabled) {
+      color: $primary-color;
+    }
+    .mat-pseudo-checkbox-checked,
+    .mat-pseudo-checkbox-indeterminate {
+      background: $primary-color;
+    }
+  }
+
+  .mat-menu-panel {
+    margin-top: 8px;
+
+    .mat-menu-content {
+      padding: 0px;
+    }
+
+    .mat-menu-item {
+      font-family: $fourth-font-family;
+      font-size: 14px;
+      outline: none;
+
+      .mat-icon {
+        margin-right: 0px;
+        vertical-align: top;
+        font-size: 15px;
+      }
+    }
+  }
+}

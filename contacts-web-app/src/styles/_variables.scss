@@ -1,0 +1,37 @@
+// FONTS
+$primary-font-family: "Montserrat", sans-serif;
+$secondary-font-family: "Rubik", sans-serif;
+$third-font-family: "Miriam Libre", sans-serif;
+$fourth-font-family: "Quicksand", sans-serif;
+
+// Colors
+$blue-color: #009efb;
+$white-color: #ffffff;
+$primary-text-color: #333333 !default;
+$primary-text-hover-color: #000000 !default;
+$primary-color: #7460ee;
+$light-red-color: #eb6d6d !default;
+$purple-color: #6d5cae !default;
+$dodger-blue-color: #039be5 !default;
+$orange-color: #f2784b !default;
+$success-color: #36bea6 !default;
+$warning-color: #f0ad4e !default;
+$danger-color: #d9534f !default;
+$info-color: #009efb !default;
+$grey-color: #66615b;
+
+// Background Colors
+$body-bg-color: #e9e9e9;
+$login-bg-color: #00bcd4;
+$header-bg-color: linear-gradient(to right, #533fd0 0, #840fb5 100%);
+$sidebar-bg-color: #272c33;
+
+// Text Colors
+$dropdown-menu-color: #666;
+$dropdown-menu-hover-color: rgba(0, 0, 0, 0.075);
+$sidebar-menu-color: #54667a;
+$sidebar-menu-active-color: #7460ee;
+
+// Width
+$sidebar-width: 240px;
+$layout-left-spacing: $sidebar-width + 15px;

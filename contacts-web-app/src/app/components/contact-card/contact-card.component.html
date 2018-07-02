@@ -1,0 +1,19 @@
+<mat-card class="contact-card">
+  <div class="contact-card__image">
+    <div class="contact-card__image__cirlce" [style.background-image]="'url(' + contact.profileImage + ')'">
+    </div>
+  </div>
+  <h3 class="contact-card__name">{{contact.firstName}} {{contact.lastName}}</h3>
+  <div class="contact-card__info">
+    <p><span>Email:</span> {{contact.email}}</p>
+    <p><span>Phone Number:</span> {{contact.phone}}</p>
+    <p><span>Status:</span> {{contact.status}}</p>
+  </div>
+  <button class="contact-card__action-menu" mat-icon-button color="primary" [matMenuTriggerFor]="actionMenu">
+    <mat-icon><i class="fa fa-ellipsis-v"></i></mat-icon>
+  </button>
+  <mat-menu #actionMenu="matMenu">
+    <button mat-menu-item routerLink="edit/{{contact.id}}"><mat-icon><i class="ti-pencil"></i></mat-icon> Edit</button>
+    <button mat-menu-item (click)="delete()"><mat-icon><i class="ti-trash"></i></mat-icon> Delete</button>
+  </mat-menu>
+</mat-card>

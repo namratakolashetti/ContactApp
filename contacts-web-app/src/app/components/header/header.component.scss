@@ -1,0 +1,27 @@
+@import "../../../styles/_variables_mixins";
+
+.header {
+  background: $purple-color;
+  padding: 13px 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    flex: 1;
+    h2 {
+      font-family: $fourth-font-family;
+      font-size: 17px;
+      margin: 0px;
+      line-height: 36px;
+    }
+  }
+
+  &__actions {
+      flex: 0;
+  }
+}

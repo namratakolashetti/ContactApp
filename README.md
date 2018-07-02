@@ -28,7 +28,7 @@ npm install
 node server.js
 ```
 
-3. Go to app folder "contacts-app". Open terminal in same folder and hit the below command to install dependencies.
+3. Go to app folder "contacts-web-app". Open terminal in same folder and hit the below command to install dependencies.
 ```
 npm install
 ```

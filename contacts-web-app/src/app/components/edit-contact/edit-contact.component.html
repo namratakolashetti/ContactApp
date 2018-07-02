@@ -1,0 +1,35 @@
+<app-header pageTitle="Edit Contact"></app-header>
+<div class="container">
+  <div class="form">
+    <mat-card class="form__card">
+      <form (ngSubmit)="onSave(contactForm)" novalidate [formGroup]="contactForm" autocomplete="off">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 form__fields">
+            <app-input type="text" label="First Name" icon="ti-user" formControlName="firstName" [control]="contactForm.get('firstName')"></app-input>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 form__fields">
+            <app-input type="text" label="Last Name" icon="ti-user" formControlName="lastName" [control]="contactForm.get('lastName')"></app-input>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 form__fields">
+            <app-input type="text" label="Email" icon="ti-email" formControlName="email" [control]="contactForm.get('email')"></app-input>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 form__fields">
+            <app-input type="tel" label="Phone" icon="ti-mobile" formControlName="phone" [control]="contactForm.get('phone')"></app-input>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 form__fields">
+            <app-select label="Status" [options]="statusOptions" formControlName="status" [control]="contactForm.get('status')"></app-select>
+          </div>
+
+          <div class="col-xs-12 form__action">
+            <button type="button" mat-raised-button color="warn" class="large-button" routerLink="/contacts">
+            <mat-icon><i class="ti-close"></i></mat-icon> Cancel
+          </button>
+            <button type="submit" [disabled]="isLoading" mat-raised-button color="primary" class="large-button">
+            <mat-icon><i class="ti-save-alt"></i></mat-icon> Save
+          </button>
+          </div>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>
